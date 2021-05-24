@@ -20,7 +20,7 @@ def checkPath():
 			path = arg
 	if os.path.exists(path):
 		if os.path.isfile(path):
-			print "Name of the file is {} and directory is {}".format(filename, os.path.dirname(path))	
+			print "Name of the file is {} and directory is {}".format(os.path.basename(path), os.path.dirname(path))	
 
 checkPath()
 
