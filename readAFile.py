@@ -18,6 +18,7 @@ def readAFile():
     if path != "":
         content = open(path)
         print(content.read())
+        content.close()
     else:
         print("Must provide -p option")
 
