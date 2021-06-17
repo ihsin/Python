@@ -44,3 +44,13 @@ patterns = '[A-Z]+[a-z]+'
 print(patternMatchedInText('Aaa', patterns)) #True
 print(patternMatchedInText('AAAsacas', patterns)) #True
 
+#remove leading zeros from an IP address.
+ip = "216.08.094.196"
+string = re.sub('\.[0]*', '.', ip)
+
+# to check for a number at the end of a string.
+text = re.compile(r".*[0-9]$")
+
+#to search the numbers (0-9) of length between 1 to 3 in a given string
+text = re.compile(r"([0-9]{1,3})")
+
